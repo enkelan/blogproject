@@ -13,8 +13,8 @@ interface TagPageProps {
     };
 }
 
-export async function generateMetaData({params}: TagPageProps): Promise<Metadata>{
-    const {tag} = params;
+export async function generateMetadata({ params }: TagPageProps): Promise<Metadata> {
+    const { tag } = params;
     return {
         title: tag,
         description: `Posts on the topic of ${tag}`,
